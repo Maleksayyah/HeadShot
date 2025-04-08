@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nomorelife</title>
+    <title>Malek Al Sayyah</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <style>
         :root {
@@ -400,9 +400,14 @@
                 max-width: 100%;
             }
             
-            .invoice {
+             .invoice {
                 border: none;
                 box-shadow: none;
+                width: 100%; /* Ensure the invoice takes full width */
+                page-break-after: always; /* Ensure each invoice starts on a new page */
+            }
+            .no-print {
+                display: none; /* Hide elements that should not be printed */
             }
         }
         
